@@ -1,4 +1,4 @@
-from config import config
+from Config import LANGUAGE
 from Core.Queue import Queue
 from pyrogram.types import Message
 from typing import Any, Dict, Union
