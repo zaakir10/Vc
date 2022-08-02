@@ -1,0 +1,11 @@
+pytube
+pillow
+aiohttp
+aiofiles
+tgcrypto
+python-dotenv
+py-tgcalls==0.8.1rc1
+youtube-search-python
+pyrogram==1.4.16
+yt-dlp
+
