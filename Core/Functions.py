@@ -241,7 +241,7 @@ async def generate_cover(title, ctitle, chatid, thumbnail):
     theme = random.choice(themes)
     ctitle = await special_to_normal(ctitle)
     image1 = Image.open(f"thumb{chatid}.png")
-    image2 = Image.open(f"theme/{theme}.PNG")
+    image2 = Image.open(f"Theme/{themes}.PNG")
     image3 = changeImageSize(1280, 720, image1)
     image4 = changeImageSize(1280, 720, image2)
     image5 = image3.convert("RGBA")
@@ -249,8 +249,8 @@ async def generate_cover(title, ctitle, chatid, thumbnail):
     Image.alpha_composite(image5, image6).save(f"temp{chatid}.png")
     img = Image.open(f"temp{chatid}.png")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("theme/font.ttf", 85)
-    font2 = ImageFont.truetype("theme/font.ttf", 60)
+    font = ImageFont.truetype("Theme/font.ttf", 85)
+    font2 = ImageFont.truetype("Theme/font.ttf", 60)
     draw.text(
         (20, 45),
         f"Playing on: {ctitle[:14]}...",
