@@ -6,6 +6,8 @@ import random
 import aiohttp
 import asyncio
 import aiofiles
+from VcUserbot.Client import pytgcalls
+
 from Config import QUALITY
 from Core.Song import Song
 from pyrogram import Client
