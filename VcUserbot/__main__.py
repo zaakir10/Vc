@@ -12,7 +12,7 @@ from Core import search, xd, delete_messages, get_group, get_queue, start_stream
 
 
 @app.on_message(
-    filters.command(["p", "/play"]) & ~filters.private & ~filters.edited
+    filters.command(["p", "play"]) & ~filters.private & ~filters.edited
 )
 @register
 @language
