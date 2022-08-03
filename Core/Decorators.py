@@ -1,5 +1,5 @@
 import time
-from LANGUAGE import load
+from Language import load
 from Config import SUDOERS, LANGUAGE
 from pyrogram import Client
 from datetime import datetime
