@@ -4,13 +4,7 @@ from Config import SESSION, API_ID, API_HASH
 
 
 
-app = Client(
-    "Vc Userbot",
-    api_id=API_ID,
-    api_hash=API_HASH,
-    SESSION,
-    plugins=dict(root="Plugins"),
-)
+app = app = Client(SESSION, api_id=API_ID, api_hash=API_HASH)
 pytgcalls = PyTgCalls(app)
 
 
