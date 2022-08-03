@@ -1,3 +1,3 @@
-from Client import pytgcalls 
+from VcUserbot.Client import pytgcalls 
 
 pytgcalls.run()
