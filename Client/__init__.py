@@ -5,9 +5,9 @@ from Config import SESSION, API_ID, API_HASH
 
 
 app = Client(
-    ":memory:",
-    API_ID,
-    API_HASH,
+    "Vc Userbot",
+    api_id=API_ID,
+    api_hash=API_HASH,
     SESSION,
     plugins=dict(root="Plugins"),
 )
