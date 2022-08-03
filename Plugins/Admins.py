@@ -16,7 +16,7 @@ from Core import (
     set_group, set_title, all_groups, clear_queue, skip_stream, check_yt_url,
     extract_args, start_stream, shuffle_queue, delete_messages,
     get_youtube_playlist)
-from Client import app, pytgcalls
+from VcUserbot.Client import app, pytgcalls
 
 @app.on_message(
     filters.command(["skip", "next"], config.PREFIXES)
