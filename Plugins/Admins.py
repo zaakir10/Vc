@@ -19,7 +19,7 @@ from Core import (
 from VcUserbot.Client import app, pytgcalls
 
 @app.on_message(
-    filters.command(["skip", "next"], config.PREFIXES)
+    filters.command(["skip", "next"])
     & ~filters.private
     & ~filters.edited
 )
@@ -55,7 +55,7 @@ async def skip_track(_, message: Message, lang):
 
 
 @app.on_message(
-    filters.command(["m", "mute"], config.PREFIXES) & ~filters.private & ~filters.edited
+    filters.command(["m", "mute"]) & ~filters.private & ~filters.edited
 )
 @register
 @language
@@ -72,7 +72,7 @@ async def mute_vc(_, message: Message, lang):
 
 
 @app.on_message(
-    filters.command(["um", "unmute"], config.PREFIXES)
+    filters.command(["um", "unmute"])
     & ~filters.private
     & ~filters.edited
 )
@@ -91,7 +91,7 @@ async def unmute_vc(_, message: Message, lang):
 
 
 @app.on_message(
-    filters.command(["ps", "pause"], config.PREFIXES)
+    filters.command(["ps", "pause"])
     & ~filters.private
     & ~filters.edited
 )
@@ -110,7 +110,7 @@ async def pause_vc(_, message: Message, lang):
 
 
 @app.on_message(
-    filters.command(["rs", "resume"], config.PREFIXES)
+    filters.command(["rs", "resume"])
     & ~filters.private
     & ~filters.edited
 )
@@ -129,7 +129,7 @@ async def resume_vc(_, message: Message, lang):
 
 
 @app.on_message(
-    filters.command(["stop", "leave"], config.PREFIXES)
+    filters.command(["stop", "leave"])
     & ~filters.private
     & ~filters.edited
 )
