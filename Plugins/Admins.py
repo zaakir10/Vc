@@ -242,7 +242,7 @@ async def set_lang(_, message: Message, lang):
     if lng != "":
         langs = [
             file.replace(".json", "")
-            for file in os.listdir(f"{os.getcwd()}/lang/")
+            for file in os.listdir(f"{os.getcwd()}/Language/")
             if file.endswith(".json")
         ]
         if lng == "list":
