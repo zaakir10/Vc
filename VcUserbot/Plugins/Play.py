@@ -3,7 +3,7 @@ from pyrogram.raw.functions.phone import CreateGroupCall
 from pytgcalls.exceptions import GroupCallNotFound, NoActiveGroupCall
 from pyrogram import filters
 from Config import PREFIXES
-from Client import app
+from VcUserbot.Client import app
 from Core.Decorators import language, register, handle_error
 from Core import search, xd, delete_messages, get_group, get_queue, start_stream, set_group
 
