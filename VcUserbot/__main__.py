@@ -3,6 +3,7 @@ from pyrogram.raw.types import InputPeerChannel
 from pyrogram.raw.functions.phone import CreateGroupCall
 from pytgcalls.exceptions import GroupCallNotFound, NoActiveGroupCall
 from pyrogram import filters
+from pyrogram.types import Message
 from Config import PREFIXES
 from VcUserbot.Client import app
 from Core.Decorators import language, register, handle_error
