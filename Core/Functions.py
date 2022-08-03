@@ -7,7 +7,7 @@ import aiohttp
 import asyncio
 import aiofiles
 from VcUserbot.Client import pytgcalls
-
+from VcUserbot.Client import app
 from Config import QUALITY
 from Core.Song import Song
 from pyrogram import Client
@@ -148,7 +148,7 @@ async def skip_stream(song: Song, lang):
     chat = song.request_msg.chat
     if xd.get(chat.id) is not None:
         try:
-            await safone[chat.id].delete()
+            await xd[chat.id].delete()
         except BaseException:
             pass
     infomsg = await song.request_msg.reply_text(lang["downloading"])
