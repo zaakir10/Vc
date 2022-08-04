@@ -241,7 +241,7 @@ async def generate_cover(title, ctitle, chatid, thumbnail):
     theme = random.choice(themes)
     ctitle = await special_to_normal(ctitle)
     image1 = Image.open(f"thumb{chatid}.png")
-    image2 = Image.open(f"Theme/{themes}.PNG")
+    image2 = Image.open(f"Theme/{themes}.png")
     image3 = changeImageSize(1280, 720, image1)
     image4 = changeImageSize(1280, 720, image2)
     image5 = image3.convert("RGBA")
