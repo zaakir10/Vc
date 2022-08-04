@@ -156,7 +156,7 @@ async def leave_vc(_, message: Message, lang):
         k = await message.reply_text(lang["notActive"])
     await delete_messages([message, k])
 
- @app.on_message(
+@app.on_message(
     filters.command(["list", "queue"])
     & ~filters.private
     & ~filters.edited
