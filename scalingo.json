@@ -1,0 +1,22 @@
+"name": "Zaid Vc Player",
+    "description": "Music allow you to stream music trought the telegram voice chat feature.",
+    "keywords": ["Zaakir", "Zaid-Vc-Player", "music", "voice chat", "telegram", "Yukki", "Yukki Music", "Private Music"],
+    "repository": "https://github.com/zaakir10/Vc",
+  "stack": "container",
+    "env": {
+        "SESSION": {
+            "description": "fill with the pyrogram session string from account",
+            "required": true
+        },
+        "API_ID": {
+            "description": "fill with the pyrogram session string from account",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "fill with the pyrogram session string from account",
+            "required": true
+        },
+        "SUDO": {
+            "description": "fill with the pyrogram session string from account",
+            "required": true
+            },
