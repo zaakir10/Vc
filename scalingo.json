@@ -20,5 +20,6 @@
             "description": "fill with the pyrogram session string from account",
             "required": true
             }
-    }
+   }
+}
         
