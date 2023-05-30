@@ -1,4 +1,4 @@
-pytube 15.0.0
+pytube==15.0.0
 TgCrypto
 pillow
 pyrogram==1.4.16
